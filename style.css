@@ -1,0 +1,17 @@
+hr {
+  border-style: dashed none none;
+  border-width: 1px;
+
+}
+
+.numberInfos {
+  height: 50%;
+}
+
+p {
+  margin: 5px auto;
+}
+
+.container-fluid {
+  padding: 3%;
+}
