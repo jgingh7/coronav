@@ -5,7 +5,7 @@ hr {
 }
 
 .numberInfos {
-  height: 50%;
+  width: 100%
 }
 
 p {
@@ -14,4 +14,10 @@ p {
 
 .container-fluid {
   padding: 3%;
+}
+
+.imgTitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
