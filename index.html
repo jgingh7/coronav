@@ -23,22 +23,20 @@
 
 <body class="container-fluid">
 
-
-
 	<h1> CoronaV for Friends</h1>
 	<h2> Data updated at Jan 04 2021 EST 21:00</h2>
 	<hr>
+	<h5>City Daily Positive (2-Week AVG Positive Num, 2-Week AVG Positive Rate)</h5>
 	<main>
-		<h5>City Daily Positive (2-Week AVG Positive Num, 2-Week AVG Positive Rate)</h5>
 		<div class="row">
 
-			<figure class="col-lg-6 col-md-6">
+			<figure class="col-lg-6">
 				<div id="chart_newyork" class="chart"></div>
 				<div id="chart_chicago" class="chart"></div>
 				<div id="chart_philly" class="chart"></div>
 			</figure>
 
-			<figure class="col-lg-6 col-md-6">
+			<figure class="col-lg-6">
 				<div id="chart_newark" class="chart"></div>
 				<div id="chart_dane" class="chart"></div>
 				<div id="chart_la" class="chart"></div>
@@ -50,13 +48,12 @@
 				<p class="caption">* (Newark does not have "official daily count")</p>
 			</nav>
 
-			<figure>
-				<figcaption class="imgTitle">Current</figcaption>
-				<img class="numberInfos" src="images/current.png" alt="currentSituation.png">
-				<figcaption>* Yellow boxes on the table are estimations.</figcaption>
-				<figcaption>* "Area" is land area (except for Seoul and NY being land+water).</figcaption>
-			</figure>
 		</div>
+		<figure>
+			<iframe id="the_iframe" onload="calcHeight();" name="WrittenPublic" title="Corona_Table" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQS_LvG8EHXlguAwBAxzb9nyVakSONim0V4catkmtXzkrvFktOjfuoKeCwY6enPw8Xs1SE1ksx0FGFk/pubhtml?gid=307825826&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+			<figcaption>* Yellow boxes on the table are estimations.</figcaption>
+			<figcaption>* "Area" is land area (except for Seoul and NY being land+water).</figcaption>
+		</figure>
 
 	</main>
 	<hr>
