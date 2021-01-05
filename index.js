@@ -59,60 +59,6 @@ function drawTrendlinesNewYork() {
   chart.draw(view, options);
 }
 
-//
-// function drawTrendlinesNewYork() {
-//   var data = new google.visualization.DataTable();
-//   data.addColumn('date', 'Date');
-//   data.addColumn('number', 'Daily Positive People');
-//
-//   data.addRows([
-//     [new Date('Dec 22, 2020'), 2693],
-//     [new Date('Dec 23, 2020'), 3199],
-//     [new Date('Dec 24, 2020'), 3609],
-//     [new Date('Dec 25, 2020'), 2937],
-//     [new Date('Dec 26, 2020'), 2938],
-//     [new Date('Dec 27, 2020'), 2512],
-//     [new Date('Dec 28, 2020'), 4029],
-//     [new Date('Dec 29, 2020'), 3366],
-//     [new Date('Dec 30, 2020'), 3851],
-//     [new Date('Dec 31, 2020'), 4800],
-//     [new Date('Jan 1, 2021'), 5041],
-//     [new Date('Jan 2, 2021'), 2937],
-//     [new Date('Jan 3, 2021'), 2892]
-//   ]);
-//
-//   var view = new google.visualization.DataView(data);
-//   view.setColumns([0, 1, {
-//       calc: 'stringify',
-//       sourceColumn: 1,
-//       type: 'string',
-//       role: 'annotation'
-//   }]);
-//
-//   var options = {
-//     title: 'NYC Daily Positive (3458, 0.041%)',
-//     legend: 'none',
-//     hAxis: {
-//       title: 'Date'
-//     },
-//     vAxis: {
-//       title: 'Number of People'
-//     },
-//     colors: ['#AB0D06'],
-//     trendlines: {
-//       0: {
-//         type: 'linear',
-//         color: '#111',
-//         opacity: .3
-//       }
-//     },
-//     chartArea:{left:100,top:100,width:"68%",height:"65%"}
-//   };
-//
-//   var chart = new google.visualization.LineChart(document.getElementById('chart_newyork'));
-//   chart.draw(view, options);
-// }
-
 function drawTrendlinesNewark() {
   var data = new google.visualization.DataTable();
   data.addColumn('date', 'Date');
