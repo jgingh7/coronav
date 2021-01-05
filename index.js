@@ -52,7 +52,8 @@ function drawTrendlinesNewYork() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_newyork'));
