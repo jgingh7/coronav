@@ -106,7 +106,8 @@ function drawTrendlinesNewark() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_newark'));
@@ -159,7 +160,8 @@ function drawTrendlinesDane() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_dane'));
@@ -212,7 +214,8 @@ function drawTrendlinesChicago() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_chicago'));
@@ -265,7 +268,8 @@ function drawTrendlinesPhilly() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_philly'));
@@ -318,7 +322,8 @@ function drawTrendlinesLA() {
         color: '#111',
         opacity: .3
       }
-    }
+    },
+    chartArea:{left:100,top:100,width:"68%",height:"65%"}
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('chart_la'));
