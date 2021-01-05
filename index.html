@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CoronaV for Friends</title>
-	<link rel="icon" type="image/png" href="icon.png" />
+	<link rel="icon" type="image/png" href="images/icon.png" />
 
 	<!-- CSS Stylesheets -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,25 +15,44 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="index.js" type="text/javascript"></script>
+
 </head>
 
 <body class="container-fluid">
+
+
+
 	<h1> CoronaV for Friends</h1>
 	<h2> Data updated at Jan 04 2021 EST 21:00</h2>
 	<hr>
 	<main>
+		<h5>City Daily Positive (2-Week AVG Positive Num, 2-Week AVG Positive Rate)</h5>
 		<div class="row">
+
 			<figure class="col-lg-6 col-md-6">
-				<figcaption class="imgTitle">City Daily Positive (2-Week AVG Positive Num, 2-Week AVG Positive Rate)</figcaption>
-				<img class="numberInfos" src="current-graph.png" alt="currentSituation-graph.png">
-				<figcaption>* The daily count numbers for NYC, Dane County, Chicago, Philadelphia, LA will not follow "official daily count", but will be counted as the increased number of cumulative positive numbers.</figcaption>
-				<figcaption>** The reason is because "official daily count" was unable to show if there was a downward or upward trend in positive numbers.</figcaption>
-				<figcaption>* (Newark does not have "official daily count")</figcaption>
+				<div id="chart_newyork" class="chart"></div>
+				<div id="chart_chicago" class="chart"></div>
+				<div id="chart_philly" class="chart"></div>
 			</figure>
 
 			<figure class="col-lg-6 col-md-6">
+				<div id="chart_newark" class="chart"></div>
+				<div id="chart_dane" class="chart"></div>
+				<div id="chart_la" class="chart"></div>
+			</figure>
+
+			<nav>
+				<p class="caption">* The daily count numbers for NYC, Dane County, Chicago, Philadelphia, LA will not follow "official daily count", but will be counted as the increased number of cumulative positive numbers.</p>
+				<p class="caption">** The reason is because "official daily count" was unable to show if there was a downward or upward trend in positive numbers.</p>
+				<p class="caption">* (Newark does not have "official daily count")</p>
+			</nav>
+
+			<figure>
 				<figcaption class="imgTitle">Current</figcaption>
-				<img class="numberInfos" src="current.png" alt="currentSituation.png">
+				<img class="numberInfos" src="images/current.png" alt="currentSituation.png">
 				<figcaption>* Yellow boxes on the table are estimations.</figcaption>
 				<figcaption>* "Area" is land area (except for Seoul and NY being land+water).</figcaption>
 			</figure>
@@ -43,18 +62,18 @@
 	<hr>
 	<footer>
 		<nav>
-			<p>* From <a href="https://coronaboard.kr/" target="_blank">Corona Board</a>: Seoul Numbers</p>
-			<p>* From <a href="https://www.worldometers.info/coronavirus/country/us/" target="_blank">Worldometer</a>: State Numbers for NY, NJ, IL, CA</p>
-			<p>* From <a href="https://coronavirus.jhu.edu/map.html" target="_blank">Johns Hopkins</a>: State Numbers for WI, PA, County Numbers for Cook, Los Angeles</p>
-			<p>* From <a href="https://www1.nyc.gov/site/doh/covid/covid-19-data.page" target="_blank">NYC Health Department</a>: NYC Numbers</p>
-			<p>* From <a href="https://essexcountynj.org/covid-19-municipality/" target="_blank">Essex County Health Department</a>: Essex County, Newark Numbers</p>
-			<p>* From <a href="https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e1b2b7b6ea444637b102fdce3aab6693" target="_blank">Dane County Health Department</a>: Dane County Numbers</p>
-			<p>* From <a href="https://www.chicago.gov/city/en/sites/covid-19/home/latest-data.html" target="_blank">Chicago Health Department</a>: Chicago Numbers</p>
-			<p>* From <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/" target="_blank">Philadelphia Health Department</a>: Philadelphia Numbers</p>
-			<p>* From <a href="http://publichealth.lacounty.gov/media/coronavirus/locations.htm" target="_blank">Los Angeles Health Department</a>: Los Angeles Numbers</p>
+			<p class="resource">* From <a href="https://coronaboard.kr/" target="_blank">Corona Board</a>: Seoul Numbers</p>
+			<p class="resource">* From <a href="https://www.worldometers.info/coronavirus/country/us/" target="_blank">Worldometer</a>: State Numbers for NY, NJ, IL, CA</p>
+			<p class="resource">* From <a href="https://coronavirus.jhu.edu/map.html" target="_blank">Johns Hopkins</a>: State Numbers for WI, PA, County Numbers for Cook, Los Angeles</p>
+			<p class="resource">* From <a href="https://www1.nyc.gov/site/doh/covid/covid-19-data.page" target="_blank">NYC Health Department</a>: NYC Numbers</p>
+			<p class="resource">* From <a href="https://essexcountynj.org/covid-19-municipality/" target="_blank">Essex County Health Department</a>: Essex County, Newark Numbers</p>
+			<p class="resource">* From <a href="https://cityofmadison.maps.arcgis.com/apps/opsdashboard/index.html#/e1b2b7b6ea444637b102fdce3aab6693" target="_blank">Dane County Health Department</a>: Dane County Numbers</p>
+			<p class="resource">* From <a href="https://www.chicago.gov/city/en/sites/covid-19/home/latest-data.html" target="_blank">Chicago Health Department</a>: Chicago Numbers</p>
+			<p class="resource">* From <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/" target="_blank">Philadelphia Health Department</a>: Philadelphia Numbers</p>
+			<p class="resource">* From <a href="http://publichealth.lacounty.gov/media/coronavirus/locations.htm" target="_blank">Los Angeles Health Department</a>: Los Angeles Numbers</p>
 		</nav>
 		<figure>
-			<img src="title.png" width="30%" alt="StaySafe.png" title="Fighting!">
+			<img src="images/title.png" width="30%" alt="StaySafe.png" title="Fighting!">
 			<figcaption>Until no more infections!</figcaption>
 		</figure>
 		<p>Started updating since Apr 24 2020</p>

@@ -4,12 +4,20 @@ hr {
 
 }
 
+h5 {
+  text-align: center;
+}
+
 .numberInfos {
   width: 100%
 }
 
-p {
+.resource {
   margin: 5px auto;
+}
+
+.caption {
+  margin: 1px auto;
 }
 
 .container-fluid {
@@ -20,4 +28,9 @@ p {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+}
+
+.chart {
+  width: 900px;
+  height: 500px;
 }
