@@ -24,7 +24,7 @@ function drawTrendlinesNewYork() {
     [new Date('Jan 2, 2021'), 5041],
     [new Date('Jan 3, 2021'), 2937],
     [new Date('Jan 4, 2021'), 2892],
-    [new Date('Jan 5, 2020'), 3956]
+    [new Date('Jan 5, 2021'), 3956]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -78,7 +78,7 @@ function drawTrendlinesNewark() {
     [new Date('Jan 2, 2021'), 166],
     [new Date('Jan 3, 2021'), 130],
     [new Date('Jan 4, 2021'), 56],
-    [new Date('Jan 5, 2020'), 111]
+    [new Date('Jan 5, 2021'), 111]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -240,7 +240,7 @@ function drawTrendlinesPhilly() {
     [new Date('Jan 2, 2021'), 404],
     [new Date('Jan 3, 2021'), 405],
     [new Date('Jan 4, 2021'), 405],
-    [new Date('Jan 4, 2021'), 916]
+    [new Date('Jan 5, 2021'), 916]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -294,7 +294,7 @@ function drawTrendlinesLA() {
     [new Date('Jan 2, 2021'), 5625],
     [new Date('Jan 3, 2021'), 5625],
     [new Date('Jan 4, 2021'), 3780],
-    [new Date('Jan 4, 2021'), 4378]
+    [new Date('Jan 5, 2021'), 4378]
   ]);
 
   var view = new google.visualization.DataView(data);
