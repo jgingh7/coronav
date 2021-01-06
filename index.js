@@ -12,19 +12,19 @@ function drawTrendlinesNewYork() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 2693],
-    [new Date('Dec 23, 2020'), 3199],
-    [new Date('Dec 24, 2020'), 3609],
-    [new Date('Dec 25, 2020'), 2937],
-    [new Date('Dec 26, 2020'), 2938],
-    [new Date('Dec 27, 2020'), 2512],
-    [new Date('Dec 28, 2020'), 4029],
-    [new Date('Dec 29, 2020'), 3366],
-    [new Date('Dec 30, 2020'), 3851],
-    [new Date('Dec 31, 2020'), 4800],
-    [new Date('Jan 1, 2021'), 5041],
-    [new Date('Jan 2, 2021'), 2937],
-    [new Date('Jan 3, 2021'), 2892]
+    [new Date('Dec 24, 2020'), 3199],
+    [new Date('Dec 25, 2020'), 3609],
+    [new Date('Dec 26, 2020'), 2937],
+    [new Date('Dec 27, 2020'), 2938],
+    [new Date('Dec 28, 2020'), 2512],
+    [new Date('Dec 29, 2020'), 4029],
+    [new Date('Dec 30, 2020'), 3366],
+    [new Date('Dec 31, 2020'), 3851],
+    [new Date('Jan 1, 2021'), 4800],
+    [new Date('Jan 2, 2021'), 5041],
+    [new Date('Jan 3, 2021'), 2937],
+    [new Date('Jan 4, 2021'), 2892],
+    [new Date('Jan 5, 2020'), 3956]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -36,7 +36,7 @@ function drawTrendlinesNewYork() {
   }]);
 
   var options = {
-    title: 'NYC Daily Positive (3458, 0.041%)',
+    title: 'NYC Daily Positive (3548, 0.042%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
@@ -65,7 +65,6 @@ function drawTrendlinesNewark() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 73],
     [new Date('Dec 23, 2020'), 161],
     [new Date('Dec 24, 2020'), 134],
     [new Date('Dec 25, 2020'), 202],
@@ -78,7 +77,8 @@ function drawTrendlinesNewark() {
     [new Date('Jan 1, 2021'), 228],
     [new Date('Jan 2, 2021'), 166],
     [new Date('Jan 3, 2021'), 130],
-    [new Date('Jan 4, 2021'), 56]
+    [new Date('Jan 4, 2021'), 56],
+    [new Date('Jan 5, 2020'), 111]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -90,7 +90,7 @@ function drawTrendlinesNewark() {
   }]);
 
   var options = {
-    title: 'Newark Daily Positive (135, 0.048%)',
+    title: 'Newark Daily Positive (137, 0.049%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
@@ -119,7 +119,6 @@ function drawTrendlinesDane() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 62],
     [new Date('Dec 23, 2020'), 137],
     [new Date('Dec 24, 2020'), 106],
     [new Date('Dec 25, 2020'), 106],
@@ -132,7 +131,8 @@ function drawTrendlinesDane() {
     [new Date('Jan 1, 2021'), 156],
     [new Date('Jan 2, 2021'), 157],
     [new Date('Jan 3, 2021'), 270],
-    [new Date('Jan 4, 2021'), 205]
+    [new Date('Jan 4, 2021'), 205],
+    [new Date('Jan 5, 2021'), 176]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -144,7 +144,7 @@ function drawTrendlinesDane() {
   }]);
 
   var options = {
-    title: 'Dane County Daily Positive (147, 0.027%)',
+    title: 'Dane County Daily Positive (155, 0.028%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
@@ -173,7 +173,6 @@ function drawTrendlinesChicago() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 972],
     [new Date('Dec 23, 2020'), 985],
     [new Date('Dec 24, 2020'), 886],
     [new Date('Dec 25, 2020'), 850],
@@ -186,7 +185,8 @@ function drawTrendlinesChicago() {
     [new Date('Jan 1, 2021'), 949],
     [new Date('Jan 2, 2021'), 949],
     [new Date('Jan 3, 2021'), 1008],
-    [new Date('Jan 4, 2021'), 990]
+    [new Date('Jan 4, 2021'), 990],
+    [new Date('Jan 5, 2021'), 1250]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -198,7 +198,7 @@ function drawTrendlinesChicago() {
   }]);
 
   var options = {
-    title: 'Chicago Daily Positive (950, 0.035%)',
+    title: 'Chicago Daily Positive (970, 0.036%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
@@ -227,7 +227,6 @@ function drawTrendlinesPhilly() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 1025],
     [new Date('Dec 23, 2020'), 744],
     [new Date('Dec 24, 2020'), 723],
     [new Date('Dec 25, 2020'), 385],
@@ -240,7 +239,8 @@ function drawTrendlinesPhilly() {
     [new Date('Jan 1, 2021'), 404],
     [new Date('Jan 2, 2021'), 404],
     [new Date('Jan 3, 2021'), 405],
-    [new Date('Jan 4, 2021'), 405]
+    [new Date('Jan 4, 2021'), 405],
+    [new Date('Jan 4, 2021'), 916]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -252,7 +252,7 @@ function drawTrendlinesPhilly() {
   }]);
 
   var options = {
-    title: 'Philadelphia Daily Positive (579, 0.037%)',
+    title: 'Philadelphia Daily Positive (571, 0.036%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
@@ -281,7 +281,6 @@ function drawTrendlinesLA() {
   data.addColumn('number', 'Daily Positive People');
 
   data.addRows([
-    [new Date('Dec 22, 2020'), 4531],
     [new Date('Dec 23, 2020'), 5638],
     [new Date('Dec 24, 2020'), 5455],
     [new Date('Dec 25, 2020'), 5906],
@@ -294,7 +293,8 @@ function drawTrendlinesLA() {
     [new Date('Jan 1, 2021'), 8354],
     [new Date('Jan 2, 2021'), 5625],
     [new Date('Jan 3, 2021'), 5625],
-    [new Date('Jan 4, 2021'), 3780]
+    [new Date('Jan 4, 2021'), 3780],
+    [new Date('Jan 4, 2021'), 4378]
   ]);
 
   var view = new google.visualization.DataView(data);
@@ -306,7 +306,7 @@ function drawTrendlinesLA() {
   }]);
 
   var options = {
-    title: 'LA Daily Positive (5477, 0.137%)',
+    title: 'LA Daily Positive (5466, 0.137%)',
     legend: 'none',
     hAxis: {
       title: 'Date'
