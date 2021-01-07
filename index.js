@@ -7,11 +7,11 @@ google.charts.setOnLoadCallback(drawTrendlinesPhilly);
 google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
-  const numbers = [3199, 3609, 3609,
+  const numbers = [3609, 3609,
     2937, 2938, 2512,
     4029, 3366, 3851,
     4800, 5041, 2937,
-    2892, 3956]
+    2892, 3956, 3969]
 
   var summation = 0
   for (var i=0; i<14; i++) {
@@ -25,11 +25,11 @@ function drawTrendlinesNewYork() {
 }
 
 function drawTrendlinesNewark() {
-  const numbers = [161, 134, 202,
+  const numbers = [134, 202,
     112, 61, 109,
     100, 152, 199,
     228, 166, 130,
-    56, 111]
+    56, 111, 253]
 
     var summation = 0
     for (var i=0; i<14; i++) {
@@ -43,11 +43,11 @@ function drawTrendlinesNewark() {
 }
 
 function drawTrendlinesDane() {
-  const numbers = [137, 106, 106,
+  const numbers = [106, 106,
     170, 170, 167,
     71, 123, 156,
     156, 157, 270,
-    205, 176]
+    205, 176, 190]
 
     var summation = 0
     for (var i=0; i<14; i++) {
@@ -61,11 +61,11 @@ function drawTrendlinesDane() {
 }
 
 function drawTrendlinesChicago() {
-  const numbers = [985, 886, 850,
+  const numbers = [886, 850,
     850, 851, 749,
     691, 1262, 1307,
     949, 949, 1008,
-    990, 1250]
+    990, 1250, 1037]
 
     var summation = 0
     for (var i=0; i<14; i++) {
@@ -79,11 +79,11 @@ function drawTrendlinesChicago() {
 }
 
 function drawTrendlinesPhilly() {
-  const numbers = [744, 723, 385,
+  const numbers = [723, 385,
     385, 386, 386,
     925, 352, 1179,
     404, 404, 405,
-    405, 916]
+    405, 916, 680]
 
     var summation = 0
     for (var i=0; i<14; i++) {
@@ -97,11 +97,11 @@ function drawTrendlinesPhilly() {
 }
 
 function drawTrendlinesLA() {
-  const numbers = [5638, 5455, 5906,
+  const numbers = [5455, 5906,
     5906, 5907, 5276,
     4607, 4202, 5863,
     8354, 5625, 5625,
-    3780, 4378]
+    3780, 4378, 4743]
 
     var summation = 0
     for (var i=0; i<14; i++) {
@@ -115,11 +115,11 @@ function drawTrendlinesLA() {
 }
 
 function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
-  new Date('Dec 23, 2020'), new Date('Dec 24, 2020'), new Date('Dec 25, 2020'),
+  new Date('Dec 24, 2020'), new Date('Dec 25, 2020'),
   new Date('Dec 26, 2020'), new Date('Dec 27, 2020'), new Date('Dec 28, 2020'),
   new Date('Dec 29, 2020'), new Date('Dec 30, 2020'), new Date('Dec 31, 2020'),
   new Date('Jan 1, 2021'), new Date('Jan 2, 2021'), new Date('Jan 3, 2021'),
-  new Date('Jan 4, 2021'), new Date('Jan 5, 2021')]) {
+  new Date('Jan 4, 2021'), new Date('Jan 5, 2021'), new Date('Jan 6, 2021')]) {
 
   var data = new google.visualization.DataTable();
   data.addColumn('date', 'Date');
