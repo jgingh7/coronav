@@ -125,8 +125,8 @@ function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
   new Date('Dec 26, 2020'), new Date('Dec 27, 2020'), new Date('Dec 28, 2020'),
   new Date('Dec 29, 2020'), new Date('Dec 30, 2020'), new Date('Dec 31, 2020'),
   new Date('Jan 1, 2021'), new Date('Jan 2, 2021'), new Date('Jan 3, 2021'),
-  new Date('Jan 4, 2021'), new Date('Jan 5, 2021'), new Date('Jan 6, 2021',
-  new Date('Jan 6, 2021')]) {
+  new Date('Jan 4, 2021'), new Date('Jan 5, 2021'), new Date('Jan 6, 2021'),
+  new Date('Jan 7, 2021')]) {
 
   var data = new google.visualization.DataTable();
   data.addColumn('date', 'Date');
