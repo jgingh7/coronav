@@ -7,126 +7,93 @@ google.charts.setOnLoadCallback(drawTrendlinesPhilly);
 google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
-  const numbers = [3609,
-    2937, 2938, 2512,
+  const numbers = [2938, 2512,
     4029, 3366, 3851,
     4800, 5041, 2937,
     2892, 3956, 3969,
-    5077]
+    5077, 5005, 5006]
 
-  var summation = 0
-  for (var i=0; i<14; i++) {
-    summation += numbers[i]
-  }
-  const average = Math.round(summation / 14)
-
-  const averagePer = ((average / 8399000) * 100).toFixed(3)
-
-  getChart('NYC', numbers, average, averagePer, 'chart_newyork')
+  const averages = [0, 0]
+  getAvg(numbers, averages, 8399000)
+  getChart('NYC', numbers, averages[0], averages[1], 'chart_newyork')
 }
 
 function drawTrendlinesNewark() {
-  const numbers = [202,
-    112, 61, 109,
+  const numbers = [61, 109,
     100, 152, 199,
     228, 166, 130,
     56, 111, 253,
-    280]
+    280, 197]
 
-    var summation = 0
-    for (var i=0; i<14; i++) {
-      summation += numbers[i]
-    }
-    const average = Math.round(summation / 14)
-
-    const averagePer = ((average / 282100) * 100).toFixed(3)
-
-  getChart('Newark', numbers, average, averagePer, 'chart_newark')
+  const averages = [0, 0]
+  getAvg(numbers, averages, 282100)
+  getChart('Newark', numbers, averages[0], averages[1], 'chart_newark')
 }
 
 function drawTrendlinesDane() {
-  const numbers = [106,
-    170, 170, 167,
+  const numbers = [170, 167,
     71, 123, 156,
     156, 157, 270,
     205, 176, 190,
-    753]
+    753, 293]
 
-    var summation = 0
-    for (var i=0; i<14; i++) {
-      summation += numbers[i]
-    }
-    const average = Math.round(summation / 14)
-
-    const averagePer = ((average / 546700) * 100).toFixed(3)
-
-  getChart('Dane County', numbers, average, averagePer, 'chart_dane')
+  const averages = [0, 0]
+  getAvg(numbers, averages, 546700)
+  getChart('Dane County', numbers, averages[0], averages[1], 'chart_dane')
 }
 
 function drawTrendlinesChicago() {
-  const numbers = [850,
-    850, 851, 749,
+  const numbers = [851, 749,
     691, 1262, 1307,
     949, 949, 1008,
     990, 1250, 1037,
-    1590]
+    1590, 1268, 1269]
 
-    var summation = 0
-    for (var i=0; i<14; i++) {
-      summation += numbers[i]
-    }
-    const average = Math.round(summation / 14)
-
-    const averagePer = ((average / 2706000) * 100).toFixed(3)
-
-  getChart('Chicago', numbers, 970, 0.036, 'chart_chicago')
+  const averages = [0, 0]
+  getAvg(numbers, averages, 2706000)
+  getChart('Chicago', numbers, averages[0], averages[1], 'chart_chicago')
 }
 
 function drawTrendlinesPhilly() {
-  const numbers = [385,
-    385, 386, 386,
+  const numbers = [386, 386,
     925, 352, 1179,
     404, 404, 405,
     405, 916, 680,
-    792]
+    792, 650]
 
-    var summation = 0
-    for (var i=0; i<14; i++) {
-      summation += numbers[i]
-    }
-    const average = Math.round(summation / 14)
-
-    const averagePer = ((average / 1584000) * 100).toFixed(3)
-
-  getChart('Philadelphia', numbers, 571, 0.036, 'chart_philly')
+  const averages = [0, 0]
+  getAvg(numbers, averages, 1584000)
+  getChart('Philadelphia', numbers, averages[0], averages[1], 'chart_philly')
 }
 
 function drawTrendlinesLA() {
-  const numbers = [5906,
-    5906, 5907, 5276,
+  const numbers = [5907, 5276,
     4607, 4202, 5863,
     8354, 5625, 5625,
     3780, 4378, 4743,
-    8374]
+    8374, 7458, 6885]
 
-    var summation = 0
-    for (var i=0; i<14; i++) {
-      summation += numbers[i]
-    }
-    const average = Math.round(summation / 14)
+  const averages = [0, 0]
+  getAvg(numbers, averages, 3990000)
+  getChart('Los Angeles', numbers, averages[0], averages[1], 'chart_la')
+}
 
-    const averagePer = ((average / 3990000) * 100).toFixed(3)
 
-  getChart('Los Angeles', numbers, average, averagePer, 'chart_la')
+function getAvg(numbers, averages, totalPop) {
+  let summation = 0
+  for (var i=0; i<numbers.length; i++) {
+    summation += numbers[i]
+  }
+  averages[0] = Math.round(summation / numbers.length)
+  averages[1] = ((averages[0] / totalPop) * 100).toFixed(3)
 }
 
 function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
-  new Date('Dec 25, 2020'),
-  new Date('Dec 26, 2020'), new Date('Dec 27, 2020'), new Date('Dec 28, 2020'),
+  new Date('Dec 27, 2020'), new Date('Dec 28, 2020'),
   new Date('Dec 29, 2020'), new Date('Dec 30, 2020'), new Date('Dec 31, 2020'),
   new Date('Jan 1, 2021'), new Date('Jan 2, 2021'), new Date('Jan 3, 2021'),
   new Date('Jan 4, 2021'), new Date('Jan 5, 2021'), new Date('Jan 6, 2021'),
-  new Date('Jan 7, 2021')]) {
+  new Date('Jan 7, 2021'), new Date('Jan 8, 2021'), new Date('Jan 9, 2021')]) {
 
   var data = new google.visualization.DataTable();
   data.addColumn('date', 'Date');
