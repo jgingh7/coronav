@@ -10,11 +10,12 @@ google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
   const numbers = [
-    5041, 2937,
+    2937,
     2892, 3956, 3969,
     5077, 5005, 5006,
     5045, 4306, 5168,
-    4508, 4746, 6222
+    4508, 4746, 6222,
+    5018
   ]
 
   const averages = [0, 0]
@@ -24,7 +25,7 @@ function drawTrendlinesNewYork() {
 
 function drawTrendlinesNewark() {
   const numbers = [
-    166, 130,
+    130,
     56, 111, 253,
     280, 197, 298,
     204, 101, 138,
@@ -38,11 +39,12 @@ function drawTrendlinesNewark() {
 
 function drawTrendlinesDane() {
   const numbers = [
-    157, 270,
+    270,
     205, 176, 190,
     753, 293, 190,
     191, 134, 95,
-    122, 236, 137
+    122, 236, 137,
+    170
   ]
 
   const averages = [0, 0]
@@ -52,11 +54,12 @@ function drawTrendlinesDane() {
 
 function drawTrendlinesChicago() {
   const numbers = [
-    949, 1008,
+    1008,
     990, 1250, 1037,
     1590, 1268, 1269,
     909, 988, 1089,
-    799, 1126, 1059
+    799, 1126, 1059,
+    723
   ]
 
   const averages = [0, 0]
@@ -66,7 +69,7 @@ function drawTrendlinesChicago() {
 
 function drawTrendlinesPhilly() {
   const numbers = [
-    404, 405,
+    405,
     405, 916, 680,
     792, 650, 517,
     517, 517, 818,
@@ -80,11 +83,12 @@ function drawTrendlinesPhilly() {
 
 function drawTrendlinesLA() {
   const numbers = [
-    5625, 5625,
+    5625,
     3780, 4378, 4743,
     8374, 7458, 6885,
     5154, 5242, 4940,
-    4696, 7912, 6040
+    4696, 7912, 6040,
+    5751
   ]
 
   const averages = [0, 0]
@@ -103,11 +107,12 @@ function getAvg(numbers, averages, totalPop) {
 }
 
 function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
-    new Date('Jan 2, 2021'), new Date('Jan 3, 2021'),
+    new Date('Jan 3, 2021'),
     new Date('Jan 4, 2021'), new Date('Jan 5, 2021'), new Date('Jan 6, 2021'),
     new Date('Jan 7, 2021'), new Date('Jan 8, 2021'), new Date('Jan 9, 2021'),
     new Date('Jan 10, 2021'), new Date('Jan 11, 2021'), new Date('Jan 12, 2021'),
-    new Date('Jan 13, 2021'), new Date('Jan 14, 2021'), new Date('Jan 15, 2021')
+    new Date('Jan 13, 2021'), new Date('Jan 14, 2021'), new Date('Jan 15, 2021'),
+    new Date('Jan 16, 2021')
   ]) {
 
     var data = new google.visualization.DataTable();
