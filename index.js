@@ -10,12 +10,11 @@ google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
   const numbers = [
-    5229,
     4533, 3375, 3069,
     2570, 2084, 2463,
     4394, 3973, 4160,
     3811, 2144, 3638,
-    3639
+    3639, 3590
   ]
 
   const averages = [0, 0]
@@ -25,11 +24,11 @@ function drawTrendlinesNewYork() {
 
 function drawTrendlinesNewark() {
   const numbers = [
-    186,
     185, 121, 118,
     50, 65, 114,
     141, 199, 173,
-    103, 250, 108
+    103, 250, 108,
+    129, 155
   ]
 
   const averages = [0, 0]
@@ -39,12 +38,11 @@ function drawTrendlinesNewark() {
 
 function drawTrendlinesChicago() {
   const numbers = [
-    525,
     356, 529, 292,
     543, 520, 494,
     373, 384, 7255,
     292, 411, 451,
-    451
+    451, 313
   ]
 
   const averages = [0, 0]
@@ -54,12 +52,11 @@ function drawTrendlinesChicago() {
 
 function drawTrendlinesDane() {
   const numbers = [
-    136,
     101, 72, 62,
     82, 219, 111,
     104, 82, 103,
     33, 95, 128,
-    90
+    90, 88
   ]
 
   const averages = [0, 0]
@@ -69,7 +66,6 @@ function drawTrendlinesDane() {
 
 function drawTrendlinesPhilly() {
   const numbers = [
-    347,
     347, 347, 521,
     305, 313, 339,
     300, 301, 301,
@@ -84,12 +80,11 @@ function drawTrendlinesPhilly() {
 
 function drawTrendlinesLA() {
   const numbers = [
-    2699,
     2446, 1696, 1691,
     1692, 2057, 1636,
     1904, 1084, 1093,
     1294, 1335, 1343,
-    1209
+    1209, 1248
   ]
 
   const averages = [0, 0]
