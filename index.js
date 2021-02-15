@@ -80,7 +80,7 @@ function drawTrendlinesPhilly() {
 
 function drawTrendlinesLA() {
   const numbers = [
-    2446, 1696, 1691,
+    1696, 1691,
     1692, 2057, 1636,
     1904, 1084, 1093,
     1294, 1335, 1343,
