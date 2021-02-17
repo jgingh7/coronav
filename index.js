@@ -1,8 +1,8 @@
 google.charts.load('current', {
   packages: ['corechart', 'line']
+});
 google.charts.setOnLoadCallback(drawTrendlinesNewYork);
 google.charts.setOnLoadCallback(drawTrendlinesNewark);
-});
 google.charts.setOnLoadCallback(drawTrendlinesDane);
 google.charts.setOnLoadCallback(drawTrendlinesChicago);
 google.charts.setOnLoadCallback(drawTrendlinesPhilly);
@@ -107,7 +107,7 @@ function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
     new Date('Feb 06, 2021'), new Date('Feb 07, 2021'), new Date('Feb 08, 2021'),
     new Date('Feb 09, 2021'), new Date('Feb 10, 2021'), new Date('Feb 11, 2021'),
     new Date('Feb 12, 2021'), new Date('Feb 13, 2021'), new Date('Feb 14, 2021'),
-    new Date('Feb 15, 2021'), new Date('Feb 16, 2021')
+    new Date('Feb 15, 2021'), new Date('Feb 16, 2021'),
   ]) {
 
     var data = new google.visualization.DataTable();
