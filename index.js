@@ -111,7 +111,7 @@ function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
     new Date('Mar 02, 2021'), new Date('Mar 03, 2021'), new Date('Mar 04, 2021'),
     new Date('Mar 05, 2021'), new Date('Mar 06, 2021'), new Date('Mar 07, 2021'),
     new Date('Mar 08, 2021'), new Date('Mar 09, 2021'), new Date('Mar 10, 2021'),
-    new Date('Mar 11, 2021'), new Date('Mar 12, 2021'), new Date('Mar 13, 2021')
+    new Date('Mar 11, 2021'), new Date('Mar 12, 2021'), new Date('Mar 13, 2021'),
     new Date('Mar 14, 2021')
   ]) {
 
