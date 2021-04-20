@@ -10,11 +10,11 @@ google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
   const numbers = [
-    2892, 2892, 2790,
-    2790, 2778, 2229,
-    3166, 3027, 2774,
-    2322, 2322, 1635,
-    1636, 2120
+    2778, 2229, 3166,
+    3027, 2774, 2322,
+    2322, 1635, 1636,
+    2120, 2648, 2053,
+    2053, 2054
   ]
 
   const averages = [0, 0]
@@ -24,11 +24,11 @@ function drawTrendlinesNewYork() {
 
 function drawTrendlinesNewark() {
   const numbers = [
-    198, 145, 181, 
-    77, 161, 220,
-    175, 151, 119,
-    120, 89, 182,
-    145, 173
+    161, 220, 175,
+    151, 119, 120,
+    89, 182, 145,
+    173, 174, 154,
+    154, 96
   ]
 
   const averages = [0, 0]
@@ -38,11 +38,11 @@ function drawTrendlinesNewark() {
 
 function drawTrendlinesChicago() {
   const numbers = [
-    685, 685, 539,
-    539, 573, 881,
-    808, 808, 894,
-    496, 497, 698,
-    698, 676
+    573, 881, 808,
+    808, 894, 496,
+    497, 698, 698,
+    676, 836, 552,
+    552, 552
   ]
 
   const averages = [0, 0]
@@ -52,11 +52,11 @@ function drawTrendlinesChicago() {
 
 function drawTrendlinesDane() {
   const numbers = [
-    88, 79, 78,
-    77, 40, 55,
-    137, 108, 96,
-    96, 51, 46,
-    97, 96
+    40, 55, 137,
+    108, 96, 96,
+    51, 46, 97,
+    96, 87, 26,
+    26, 119
   ]
 
   const averages = [0, 0]
@@ -66,11 +66,11 @@ function drawTrendlinesDane() {
 
 function drawTrendlinesPhilly() {
   const numbers = [
-    400, 400, 400,
-    401, 910, 871,
-    589, 687, 523,
-    523, 523, 721,
-    721, 843
+    910, 871, 589,
+    687, 523, 523,
+    523, 721, 721,
+    843, 743, 440,
+    441, 441
   ]
 
   const averages = [0, 0]
@@ -80,11 +80,11 @@ function drawTrendlinesPhilly() {
 
 function drawTrendlinesLA() {
   const numbers = [
-    299, 300, 177,
-    178, 247, 278,
-    383, 294, 300,
-    220, 220, 211,
-    212, 495
+    247, 278, 383,
+    294, 300, 220,
+    220, 211, 212,
+    495, 414, 222,
+    222, 223
   ]
 
   const averages = [0, 0]
@@ -103,11 +103,11 @@ function getAvg(numbers, averages, totalPop) {
 }
 
 function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
-    new Date('Apr 02, 2021'), new Date('Apr 03, 2021'), new Date('Apr 04, 2021'),
-    new Date('Apr 05, 2021'), new Date('Apr 06, 2021'), new Date('Apr 07, 2021'),
+    new Date('Apr 06, 2021'), new Date('Apr 07, 2021'),
     new Date('Apr 08, 2021'), new Date('Apr 09, 2021'), new Date('Apr 10, 2021'),
     new Date('Apr 11, 2021'), new Date('Apr 12, 2021'), new Date('Apr 13, 2021'),
-    new Date('Apr 14, 2021'), new Date('Apr 15, 2021')
+    new Date('Apr 14, 2021'), new Date('Apr 15, 2021'), new Date('Apr 16, 2021'),
+    new Date('Apr 17, 2021'), new Date('Apr 18, 2021'), new Date('Apr 19, 2021'),
   ]) {
 
     var data = new google.visualization.DataTable();
