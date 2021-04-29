@@ -10,11 +10,11 @@ google.charts.setOnLoadCallback(drawTrendlinesLA);
 
 function drawTrendlinesNewYork() {
   const numbers = [
-    2778, 2229, 3166,
-    3027, 2774, 2322,
-    2322, 1635, 1636,
     2120, 2648, 2053,
-    2053, 2054
+    2053, 2054, 2012,
+    1452, 1973, 1411,
+    1411, 1411, 1411,
+    1256, 850
   ]
 
   const averages = [0, 0]
@@ -24,11 +24,11 @@ function drawTrendlinesNewYork() {
 
 function drawTrendlinesNewark() {
   const numbers = [
-    161, 220, 175,
-    151, 119, 120,
-    89, 182, 145,
     173, 174, 154,
-    154, 96
+    154, 96, 125,
+    171, 182, 124,
+    124, 125, -2087,
+    95, 80
   ]
 
   const averages = [0, 0]
@@ -38,11 +38,11 @@ function drawTrendlinesNewark() {
 
 function drawTrendlinesChicago() {
   const numbers = [
-    573, 881, 808,
-    808, 894, 496,
-    497, 698, 698,
     676, 836, 552,
-    552, 552
+    552, 552, 352,
+    726, 504, 505,
+    505, 506, 506,
+    402, 514
   ]
 
   const averages = [0, 0]
@@ -52,11 +52,11 @@ function drawTrendlinesChicago() {
 
 function drawTrendlinesDane() {
   const numbers = [
-    40, 55, 137,
-    108, 96, 96,
-    51, 46, 97,
     96, 87, 26,
-    26, 119
+    26, 119, 44,
+    63, 98, 41,
+    41, 42, 79,
+    47, 46
   ]
 
   const averages = [0, 0]
@@ -66,11 +66,11 @@ function drawTrendlinesDane() {
 
 function drawTrendlinesPhilly() {
   const numbers = [
-    910, 871, 589,
-    687, 523, 523,
-    523, 721, 721,
     843, 743, 440,
-    441, 441
+    441, 441, 746,
+    683, 594, 401,
+    402, 402, 402,
+    608, 466
   ]
 
   const averages = [0, 0]
@@ -80,11 +80,11 @@ function drawTrendlinesPhilly() {
 
 function drawTrendlinesLA() {
   const numbers = [
-    247, 278, 383,
-    294, 300, 220,
-    220, 211, 212,
     495, 414, 222,
-    222, 223
+    222, 223, 162,
+    163, 142, 188,
+    188, 188, 189,
+    143, 121
   ]
 
   const averages = [0, 0]
@@ -103,11 +103,11 @@ function getAvg(numbers, averages, totalPop) {
 }
 
 function getChart(city, numbers, avgNum, avgPercentage, chartName, dates = [
-    new Date('Apr 06, 2021'), new Date('Apr 07, 2021'),
-    new Date('Apr 08, 2021'), new Date('Apr 09, 2021'), new Date('Apr 10, 2021'),
-    new Date('Apr 11, 2021'), new Date('Apr 12, 2021'), new Date('Apr 13, 2021'),
-    new Date('Apr 14, 2021'), new Date('Apr 15, 2021'), new Date('Apr 16, 2021'),
-    new Date('Apr 17, 2021'), new Date('Apr 18, 2021'), new Date('Apr 19, 2021'),
+    new Date('Apr 15, 2021'), new Date('Apr 16, 2021'), new Date('Apr 17, 2021'),
+    new Date('Apr 18, 2021'), new Date('Apr 19, 2021'), new Date('Apr 20, 2021'),
+    new Date('Apr 21, 2021'), new Date('Apr 22, 2021'), new Date('Apr 23, 2021'),
+    new Date('Apr 24, 2021'), new Date('Apr 25, 2021'), new Date('Apr 26, 2021'),
+    new Date('Apr 27, 2021'), new Date('Apr 28, 2021'),
   ]) {
 
     var data = new google.visualization.DataTable();
